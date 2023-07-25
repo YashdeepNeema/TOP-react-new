@@ -1,0 +1,33 @@
+<!--CS50W ka lecture 06: User Interface:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        function Hello(props) {
+            return (
+                <h1>Hello, {props.name}!</h1>
+            );
+        }
+        
+        function App() {
+            return (
+                <div>
+                    <Hello name="kaka" />
+                    <Hello name="jaja" />
+                    <Hello name="lala" />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+</body>
+</html>
